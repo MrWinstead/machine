@@ -163,7 +163,7 @@ func (d *Driver) GetCreateFlags() []mcnflag.Flag {
 		},
 		mcnflag.StringSliceFlag{
 			Name:   "amazonec2-security-group",
-			Usage:  "AWS VPC security group",
+			Usage:  "AWS VPC security group without prefix",
 			Value:  []string{defaultSecurityGroup},
 			EnvVar: "AWS_SECURITY_GROUP",
 		},
